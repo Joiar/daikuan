@@ -1,0 +1,150 @@
+<!--pages/home/home.wxml--> 
+<scroll-view style="height: 100%;" scroll-y="true" scroll-top="{{scrollTop.scroll_top}}" bindscroll="scrollTopFun"> 
+<!-- head -->
+<view class='head'>
+  <view class='logo'><image mode="widthFix" src='../../images/logo.png'></image></view>
+  <view class='right'><image mode="widthFix" src='../../images/head_right.png'></image></view>
+</view>
+<!-- banner -->
+<view class='banner'>
+  <image mode="widthFix" src='../../images/banner.png'></image>
+</view>
+<!-- content -->
+<view class='content'>
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <label>
+      <view><image style='width:46rpx;' mode="widthFix" src='../../images/name.png'></image></view>
+      <input name="username" type='text' placeholder='请输入你的姓名'></input>
+    </label>
+    <label>
+      <view><image style='width:28rpx;' mode="widthFix" src='../../images/phone.png'></image></view>
+      <input name="mobile" type='text' placeholder='请输入你的手机号码'></input>
+    </label>
+    <view><button formType="submit">立即申请</button></view>
+  </form>
+  <!--step  -->
+  <view class='step'>
+    <!--top  -->
+     <view class='top'>
+      <view class='top_l'>
+        <image mode="widthFix" src='../../images/step_1.png'></image>
+      </view>
+      <view class='top_r'>
+        <image mode="widthFix" src='../../images/step_2.png'></image>
+        <view>简单 <text>4</text> 步</view>
+        <view>快至2小时放款</view> 
+      </view>
+    </view> 
+    <!--bottom  -->
+    <view class='bottom'>
+      <image mode="widthFix" src='../../images/step.png'></image>
+    </view>
+  </view>
+  <!--kinds  -->
+  <view class='kinds'>
+
+    <view class='box'>
+      <view class='left'>
+        <view class='l_txt'> <view style='margin-top:20rpx;'>信</view><view>用</view><view>贷</view><view>款</view> </view>
+        <view class='triangle'> <image mode="widthFix"  src='../../images/triangle.png'></image> </view>
+        <view class='img'> <image src='../../images/kind_1.png'></image> </view>
+      </view>
+      <view class='right'>
+        <text>门槛低 最快一天到账</text>
+        <view>纯信用贷款，</view>
+        <view> 无需任何抵押， </view>
+        <view>信用可以当钱花的时代</view>
+      </view>
+    </view>
+
+    <view class='box'>
+      <view class='left'>
+        <view class='l_txt'> <view style='margin-top:20rpx;'>抵</view><view>押</view><view>贷</view><view>款</view> </view>
+        <view class='triangle'> <image mode="widthFix"  src='../../images/triangle.png'></image> </view>
+        <view class='img'> <image src='../../images/kind_2.png'></image> </view>
+      </view>
+      <view class='right'>
+        <text>有房就贷  有车就借</text>
+        <view>房车均可，</view>
+        <view>有抵押，</view>
+        <view>可信任</view>
+      </view>
+    </view>
+    
+    <view class='box'>
+      <view class='left'>
+        <view class='l_txt'> <view style='margin-top:20rpx;'>按</view><view>揭</view><view>贷</view><view>款</view> </view>
+        <view class='triangle'> <image mode="widthFix"  src='../../images/triangle.png'></image> </view>
+        <view class='img'> <image src='../../images/kind_3.png'></image> </view>
+      </view>
+      <view class='right'>
+        <text>每月花少钱  提前先享受</text>
+        <view>房患于未然, </view>
+        <view>让家的温馨在你我手中传递!</view>
+      </view>
+    </view>
+
+    <view class='box'>
+      <view class='left'>
+        <view class='l_txt'> <view style='margin-top:20rpx;'>房</view><view>子</view><view>贷</view><view>款</view> </view>
+        <view class='triangle'> <image mode="widthFix"  src='../../images/triangle.png'></image> </view>
+        <view class='img'> <image src='../../images/kind_4.png'></image> </view>
+      </view>
+      <view class='right'>
+        <text>额度高  利息低</text>
+        <view>不看负债，</view>
+        <view>不看征信，</view>
+        <view>无户籍限制</view>
+      </view>
+    </view>
+    
+    <view class='box'>
+      <view class='left'>
+        <view class='l_txt'> <view style='margin-top:20rpx;'>汽</view><view>车</view><view>贷</view><view>款</view> </view>
+        <view class='triangle'> <image mode="widthFix"  src='../../images/triangle.png'></image> </view>
+        <view class='img'> <image src='../../images/kind_5.png'></image> </view>
+      </view>
+      <view class='right'>
+        <text>有车就能贷</text>
+        <view>不押车，</view>
+        <view>不装GPS，</view>
+        <view>不过户</view>
+      </view>
+    </view>
+  </view>
+  <!--advantage  -->
+  <view class='advantage'>
+    <view class='title'>我们的优势</view>
+    <view class='items'>
+      
+      <view class='item'>
+        <image src='../../images/adv_1.png' mode="widthFix" ></image>
+        <view>免费抵押担保</view>
+        <view>最高可贷<text style='color:#009596;'>50万</text></view>
+      </view>
+
+      <view class='item'>
+        <image src='../../images/adv_2.png' mode="widthFix" ></image>
+        <view>更多选择优惠</view>
+        <view>产品多达<text style='color:#85af2f;' >30种</text></view>
+      </view>
+
+      <view class='item'>
+        <image src='../../images/adv_3.png' mode="widthFix" ></image>
+        <view>借一万每天</view>
+        <view>费用低至<text style='color:#fdbe19;'>3元</text></view>
+      </view>
+
+    </view>
+    <!--foot  -->
+    <view class='foot'>
+      <view class='txt'>领先易贷为你提供丰富的无抵押和有抵押贷款产品!</view>
+      <view class='tip'>大品牌，值得信赖!</view>
+      <view class='copyright'>Copyright 2006-2017 东莞市领先投资咨询有限公司 版权所有</view>
+    </view>
+
+  </view>
+  
+</view>
+</scroll-view> 
+<view class='float_bottom'   wx:if="{{scrollTop.goTop_show}}" catchtap="goTopFun">立即申请</view>
